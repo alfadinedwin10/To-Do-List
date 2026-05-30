@@ -1,0 +1,132 @@
+body {
+  background-color: #0b0ff7;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
+  background-image: url("Image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background:
+    linear-gradient (rgba(11, 15, 247, 0.5), rgba(11, 15, 247, 0.5)),
+    url("Image.jpg");
+    text-align: center;
+}
+
+.todo-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  font-weight: 300;
+  padding: 30px;
+}
+
+.todo-wrapper h2 {
+  color: #0b0ff7;
+  margin: 0;
+}
+
+.todo-wrapper p {
+  color: #5395f8;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.todo-wrapper ol {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.todo-wrapper ol li {
+  padding: 3px;
+  margin: 5px 0;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.todo-wrapper .completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-wrapper .pretty-button {
+  background-color: #0b0ff7;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  margin: 10px 2px;
+  border-radius: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: small;
+}
+
+.todo-wrapper .pretty-button:hover {
+  background-color: #5395f8;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.todo-wrapper input {
+  padding: 3px 6px;
+  width: 200px;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.todo-wrapper form {
+  display: inline-block;
+}
+
+#control-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.todo-wrapper #clear-completed-button {
+  background-color: #159411;
+}
+
+.todo-wrapper #empty-button {
+  background-color: #f44336;
+}
+
+.todo-wrapper #save-button {
+  background-color: #991566;
+}
+
+@media only screen and (min-width: 1400px) {
+  .todo-wrapper {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .todo-wrapper input {
+    width: 600px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+  .todo-wrapper {
+    width: 75%;
+    padding: 20px;
+  }
+
+  .todo-wrapper input {
+    width: 400px;
+    margin-bottom: 10px;
+  }
+}
